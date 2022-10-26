@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#wrap {
+	max-width:1000px;
+	margin:auto;
+}
+body{
+    background-image:url(pict/texture.jpg)
+}
+@font-face{
+    font-family:gabrielle;
+    src:url(gabrielle.ttf);
+}
+#menu_horisontal {
+    width:1000px;
+    height:30px;
+    border:1px solid black;
+    background-color:lightgrey;
+    color:black;
+    text-align:center;
+    position: fixed;
+    top: 0px;
+    z-index:200;
+    box-shadow: 5px 5px 5px gray;
+    border-radius:10px;
+}
+#menu_horisontal ul{
+    padding: 0px;
+    margin: 3px;
+    list-style-type: none;
+    text-align: center;
+}
+#menu_horisontal li{
+    display: inline;
+}
+#menu_horisontal li a{
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+    border-right: 1px solid gray;
+    padding: .2em 1em;
+    font-size: 12px;
+}
+#menu_horisontal li a:hover {
+    background-color: gray;
+    color: white;
+}
+#header {
+	position:relative;
+	top:27px;
+	max-width:1000px;
+	height:200px;
+	display:block;
+}
+#slogan {
+	position:absolute;
+	width:400px;
+	height:170px;
+	top:10px;
+	left:10px;
+    /* background-color:yellow; */
+}
+#slogan h1{
+    font-family:gabrielle;
+    font-size:55px;
+    text-align:right;
+    font-weight:bold;
+    color:green;
+    margin-top:30px;
+    margin-bottom:0px;
+    padding:0;
+    text-shadow:3px 2px 1px grey;
+}
+#slogan .slogan{
+    font-family:tahoma,verdana,arial;
+    font-size:14px;
+    text-align:right;
+    text-decoration:overline;
+    color:brown;
+    font-weight:bold;
+    font-style:italic;
+}
+#gambar {
+	position:absolute;
+	width:400px;
+	height:170px;
+	top:10px;
+	right:10px;
+    /* background-color:yellow; */
+}
+#kiri {
+    width:200px;
+    margin-top:30px;
+    min-height:510px;
+    position:relative;
+    display:block;
+    float:left;
+}
+#menu_vertikal {
+    position:absolute;
+    width:200px;
+    height:300px;
+    display:block;
+    border:1px solid black;
+    background-color:grey;
+    color:white;
+    line-height:30px;
+    text-align:center;
+}
+#menu_vertikal li{
+    list-style-type:none;
+    text-align:left;
+}
+#menu_vertikal li a{
+    text-decoration:none;
+    width:175px;
+    background-color:lightyellow;
+    display:block;
+    border-top:1px solid black;
+    padding:.2em .8em;
+}
+#menu_vertikal ul{
+    padding:0px;
+    margin-top:8px;
+}
+#menu_vertikal li a:hover {
+    background-color:lightgray;
+    color:black;
+}
+#banner {
+    position:absolute;
+    top:305px;
+    width:200px;
+    min-height:200px;
+    display:block;
+    margin-bottom:200px;
+}
+#content {
+	max-width:700px;
+    display:inline-block;
+    font-size: 15px;
+    margin-top: 30px;
+}
+#content h2{
+    text-align: left;
+}
+#footer {
+	clear:both;
+	margin-top:50px;
+	max-width:1000px;
+	height:80px;
+    background-color:lightgray;
+	color:black;
+	display:block;
+    text-align:center;
+    padding:2px;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+}
+</style>
+</head>
+<body>	
+<div id="wrap">
+	<div id="menu_horisontal">
+    <ul>
+            <li><a href="welcome.html">Welcome</a></li>
+            <li><a href="alam.html">Wisata Alam</a></li>
+            <li><a href="kuliner.html">Wisata Kuliner</a></li>
+            <li><a href="budaya.html">Wisata Budaya</a></li>
+            <li><a href="foto.html">Photos</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+	<div id="header">
+		<div id="slogan">
+            <h1>Wisata Jogjakarta</h1>
+            <div class="slogan">Surga Wisata Alam, Kuliner, dan Budaya</div>
+        </div>
+		<div id="gambar"><img src="pict/wisata.png" height="170px"/></div>
+	</div>
+	<div id="kiri">
+		<div id="menu_vertikal">
+        .:: Menu ::.
+        <ul>
+            <li><a href="welcome.html">Welcome</a></li>
+            <li><a href="alam.html">Wisata Alam</a></li>
+            <li><a href="kuliner.html">Wisata Kuliner</a></li>
+            <li><a href="budaya.html">Wisata Budaya</a></li>
+            <li><a href="foto.html">Photos</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+		<div id="banner">
+            <img src="pict/banner.jpg" width="200px" height="200px"/>
+        </div>
+	</div>
+	<div id="content">
+    <h2>Welcome</h2>
+    <img style="float:right; border:1px solid black" src="pict/peta_diy.jpg" width="250px" height="200px"/>
+    <p style="text-align: justify;"><b>Daerah Istimewa Yogyakarta</b> adalah Daerah Istimewa 
+    setingkat provinsi di Indonesia yang merupakan peleburan Negara Kesultanan Yogyakarta dan 
+    Negara Kadipaten Paku Alaman. Daerah Istimewa Yogyakarta yang terletak di bagian selatan 
+    Pulau Jawa bagian tengah dan berbatasan dengan Provinsi Jawa Tengah dan Samudera Hindia. 
+    Daerah Istimewa yang memiliki luas 3.185,80 km<sup>2</sup> ini terdiri atas satu kota dan empat 
+    kabupaten, yang terbagi lagi menjadi 78 kecamatan dan 438 desa/kelurahan. Menurut sensus 
+    penduduk 2010 memiliki jumlah penduduk 3.452.390 jiwa dengan proporsi 1.705.404 laki-laki dan 
+    1.746.986 perempuan, serta memiliki kepadatan penduduk sebesar 1.084 jiwa per km2 </p>
+    <img style="float:left; border:1px solid black" src="pict/mataram1830.png" width="250px" height="200px"/>
+    <p style="text-align: justify;">Sebelum Indonesia merdeka, Yogyakarta merupakan daerah yang mempunyai pemerintahan sendiri atau disebut 
+    Zelfbestuurlandschappen/Daerah Swapraja, yaitu Kasultanan Ngayogyakarta Hadiningrat dan Kadipaten Pakualaman. Kasultanan Ngayogyakarta 
+    Hadiningrat didirikan oleh Pangeran Mangkubumi yang bergelar Sultan Hamengku Buwono I pada tahun 1755, sedangkan Kadipaten Pakualaman 
+    didirikan oleh Pangeran Notokusumo (saudara Sultan Hamengku Buwono II) yang bergelar Adipati Paku Alam I pada tahun 1813. Pemerintah Hindia 
+    Belanda mengakui Kasultanan, dan Pakualaman sebagai kerajaan dengan hak mengatur rumah tangganya sendiri yang dinyatakan dalam kontrak 
+    politik. Kontrak politik yang terakhir Kasultanan tercantum dalam Staatsblaad 1942 Nomor 47, sedangkan kontrak politik Pakualaman dalam 
+    Staatsblaad 1941 Nomor 577. Eksistensi kedua kerajaan tersebut telah mendapat pengakuan dari dunia internasional, baik pada masa penjajahan 
+    Belanda, Inggris, maupun Jepang. Ketika Jepang meninggalkan Indonesia, kedua kerajaan tersebut telah siap menjadi sebuah negara sendiri yang 
+    merdeka, lengkap dengan sistem pemerintahannya (susunan asli), wilayah, dan penduduknya.</p>
+    </div>
+	<div id="footer">
+    <p style="font:11px verdana">
+    Hak Cipta &copy; 2010 Dinas Perhubungan, Komunikasi, dan Informatika Provinsi DIY
+    </p>
+    <p style="font:12px Courier New">
+    Telp. +62 (274) 520424 Fax. +62 (274) 555246 <br/>
+    Email: <b>dishubkominfo@jogjaprov.go.id</b>
+    </p>
+    </div>
+</div>
+</body>
+</html>
